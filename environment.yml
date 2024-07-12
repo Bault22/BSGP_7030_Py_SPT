@@ -1,20 +1,22 @@
 name: example-environment
 channels:
   - conda-forge
-  - default
+  - bioconda
+  - defaults
 dependencies:
   - python=3.9
-  - r=4.0
-  - plotly
-  - pandas
-  - matplotlib
-  - scikit-learn
-  - numpy
-  - scipy
-  - statsmodels 
-  - seaborn
+  - r-base=4.0
   - r-dplyr
   - r-ggplot2
   - r-reshape2
   - r-tidyverse
   - r-stringr
+  - pip
+  - pip:
+    - seaborn
+    - matplotlib
+    - pandas
+    - scikit-learn
+    - plotly
+    - numpy
+    - statsmodels
